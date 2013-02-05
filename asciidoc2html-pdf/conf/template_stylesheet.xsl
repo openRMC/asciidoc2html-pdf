@@ -20,9 +20,9 @@
 <xsl:import href="../bin/asciidoc-8.6.6/docbook-xsl/fo.xsl"/>
 
 <!-- Header and footer image parameters and their relative paths -->	
-<xsl:param name="header.image.filename" select="'conf/whitepaper/template/tssglogo.png'"/>
+<xsl:param name="header.image.filename" select="'conf/whitepaper/template/Open_RMC-01.png'"/>
 <xsl:param name="footer.image.filename" select="'conf/whitepaper/template/tssg_bar_full.png'"/>
-<xsl:param name="cover.image.filename" select="'conf/whitepaper/template/tssg_logo.png'"/>
+<xsl:param name="cover.image.filename" select="'conf/whitepaper/template/Open_RMC-01.png'"/>
 
 <!-- Page Layout parameters 
 	see: 	http://sagehill.net/docbookxsl/PrintOutput.html#TopBotMargins 
@@ -62,7 +62,7 @@
 
       <xsl:when test="$sequence = 'odd' and $position = 'center'">
         <!-- <xsl:call-template name="draft.text"/> -->
-	<xsl:text>http://www.tssg.org</xsl:text>
+	<xsl:text>http://www.openRMC.org</xsl:text>
       </xsl:when>
 
       <xsl:when test="$sequence = 'odd' and $position = 'right'">
