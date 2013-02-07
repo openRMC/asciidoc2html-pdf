@@ -1,4 +1,4 @@
-# TSSG 3MT Documentation System
+# Documentation System
 This repository contains the following major items:
 
 - Asciidoc2html-pdf toolchain 
