@@ -82,9 +82,9 @@ $DIR/bin/asciidoc-8.6.6/a2x.py -v --stylesheet=template_stylesheet.css -f xhtml 
 echo "Report successfully generated and stored as $output/inputReport/$outputfilename.html"
 
 echo "Copying coverpage/stylesheet resources into the output directory."
-cp $DIR/conf/whitepaper/template/tssglogo.png $output/
-cp $DIR/conf/whitepaper/template/tssg_bar_full.png $output/
-cp $DIR/conf/whitepaper/template/tssg_logo.png $output/
+cp $DIR/conf/whitepaper/template/Open_RMC-01.png $output/
+cp $DIR/conf/whitepaper/template/openRMC_bar_full.png $output/
+cp $DIR/conf/whitepaper/template/Open_RMC-01.png $output/
 cp $DIR/conf/template_stylesheet.css $output/
 
 echo "Deleting unneeded files"
@@ -118,9 +118,9 @@ java -jar $DIR/bin/coverpagehelper.jar -p $output/inputReport/$outputfilename.xm
 
 # Converts the XML using XSL stylesheets to a .fo file suitible for passing to tools such as Apache-FOP
 xsltproc -nonet \
--param header.image.filename "'$DIR/conf/whitepaper/template/tssglogo.png'" \
--param footer.image.filename "'$DIR/conf/whitepaper/template/tssg_bar_full.png'" \
--param cover.image.filename "'$DIR/conf/whitepaper/template/tssg_logo.png'" \
+-param header.image.filename "'$DIR/conf/whitepaper/template/Open_RMC-01.png'" \
+-param footer.image.filename "'$DIR/conf/whitepaper/template/openRMC_bar_full.png'" \
+-param cover.image.filename "'$DIR/conf/whitepaper/template/Open_RMC-01.png'" \
 -param navig.graphics.path "'$DIR/bin/asciidoc-8.6.6/images/icons/'" \
 -param admon.graphics.path "'$DIR/bin/asciidoc-8.6.6/images/icons/'" \
 -param callout.graphics.path "'$DIR/bin/asciidoc-8.6.6/images/icons/callouts/'" \
